@@ -22,6 +22,13 @@ public class ControlUnit {
         this.hdd = new HardDrive(new Size(2), "Western Digital");
     }
     
+    public ControlUnit(Memory memory, CPU cpu, Motherboard motherboard, HardDrive hdd) {
+        this.memory = memory;
+        this.cpu = cpu;
+        this.motherboard = motherboard;
+        this.hdd = hdd;
+    }
+    
     public Memory getMemory() {
         return memory;
     }

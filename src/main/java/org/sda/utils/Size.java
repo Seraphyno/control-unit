@@ -25,4 +25,8 @@ public class Size {
     public SizeUnit getUnit() {
         return unit;
     }
+    
+    public int addMemorySizes(int size1, int size2) {
+        return size1 + size2;
+    }
 }
