@@ -15,10 +15,10 @@ public class ControlUnit {
     private Motherboard motherboard;
     private HardDrive hdd;
     
-    public ControlUnit(RamType ramType) {
+    public ControlUnit(RamType ramType, String cpuMaker, String motherboardMaker) {
         this.memory = new Memory(ramType, new Frequency(1666), new Size(8));
-        this.cpu = new CPU("x64", "Intel", new Frequency(3));
-        this.motherboard = new Motherboard("ASUS", true, 4);
+        this.cpu = new CPU("x64", cpuMaker, new Frequency(3));
+        this.motherboard = new Motherboard(motherboardMaker, true, 4);
         this.hdd = new HardDrive(new Size(2), "Western Digital");
     }
     
